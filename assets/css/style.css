@@ -1,0 +1,108 @@
+
+.container-fluid{
+    width: 700px;
+    height: auto;
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+
+}
+#battleSword{
+    margin-top: 200px;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 100%;
+    display: none;
+
+
+}
+#battleCape{
+    margin-top: 200px;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 100%;
+    display: none;
+
+
+
+}
+#battleShield{
+    margin-top: 200px;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 100%;
+    display: none;
+
+
+}
+body{
+    background-color: #9ECE9A;
+}
+#score{
+    display: none;
+
+}
+#enemyType{
+    display: none;
+    padding-top: 10px;
+}
+#okButton{
+    margin-top: 200px;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 100%;
+
+}
+#skipButton{
+    margin-top: 200px;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 100%;
+
+}
+#tryAgainButton{
+    margin-top: 200px;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 100%;
+    display: none;
+}
+#toSay{
+    padding-top: 30px;
+}
+
+
+#time{
+    display: none;
+}
+#timeLeftDiv{
+    display: none;
+}
+#mainDiv{
+
+    padding: 10px;
+    max-width: 100%;
+    background-color: white;
+    border-radius: 95px 9px 91px 7px;
+    -moz-border-radius: 95px 9px 91px 7px;
+    -webkit-border-radius: 95px 9px 91px 7px;
+    border: 15px outset #9ECE9A;
+
+}
+#jumbotron{
+    background-color: #9ECE9A;
+}
+#copyright{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+}
+#copyrightDiv{
+    text-align: center;
+}
+#wholePageDiv{
+    max-width: 100% ;
+}
+
+
