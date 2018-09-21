@@ -264,7 +264,10 @@ window.onload = function () {
     var tryAgainButton = document.getElementById('tryAgainButton');
     var levelIdentifier = "phase1";
 
-    toSay.innerHTML = "Can anyone hear me?";
+    okButton.value="Start";
+    skipButton.style.display="none";
+    toSay.style.color="#991916";
+    toSay.innerHTML = "Press Start";
 
 
     tryAgainButton.onclick = function () {
@@ -272,11 +275,14 @@ window.onload = function () {
     };
     okButton.onclick = function () {
         if(page === 0){
-            skipButton.style.display="none";
-            toSay.innerHTML = ".....";
+            okButton.value="Continue";
+            skipButton.style.display="inline-block";
+            toSay.innerHTML = "Is someone there?";
+            toSay.style.color="#991916";
             page = 1;
         } else if(page === 1){
-            toSay.innerHTML = "oh hey! I'm right here!";
+            skipButton.style.display="none";
+            toSay.innerHTML = "oh hey! right here!";
             page = 2;
         } else if (page === 2){
             toSay.innerHTML = " I thought no one would ever hear me down here.";
@@ -302,18 +308,22 @@ window.onload = function () {
             toSay.innerHTML = "You can help me get back to my Kingdom and help me get back to this war.";
             page = 9;
         } else if (page === 9){
+            toSay.style.color="#231F20";
             toSay.innerHTML = "........";
             page = 10;
         } else if (page === 10){
+            toSay.style.color="#991916";
             toSay.innerHTML = "What Kingdom you say?";
             page = 11;
         } else if (page === 11){
             toSay.innerHTML = "I'm from the Kingdom of the Three Gems. Emythyst.";
             page = 12;
         } else if (page === 12){
+            toSay.style.color="#231F20";
             toSay.innerHTML = "........";
             page = 13;
         } else if (page === 13){
+            toSay.style.color="#991916";
             toSay.innerHTML = "You're on your way to get there?";
             page = 14;
         } else if (page === 14){
@@ -339,10 +349,12 @@ window.onload = function () {
             page = 21;
         } else if (page === 21){
             toSay.innerHTML = "*crystals forming*";
+            toSay.style.color="#413647";
 
             page = 22;
         }
         else if (page === 22){
+            toSay.style.color="#991916";
             toSay.innerHTML = "Guard up kid we have company.";
             page = 23;
         }
@@ -444,6 +456,7 @@ window.onload = function () {
             page = 42;
         }
         else if (page === 42){
+            toSay.style.color="#413647";
             toSay.innerHTML = "Crystal Sage: ...";
             page = 43;
         }
@@ -456,6 +469,7 @@ window.onload = function () {
             page = 45;
         }
         else if (page === 45){
+            toSay.style.color="#991916";
             toSay.innerHTML = "Elias: ... ";
             page = 46;
         }
@@ -468,6 +482,7 @@ window.onload = function () {
             page = 48;
         }
         else if (page === 48){
+            toSay.style.color="#413647";
             toSay.innerHTML = "Crystal Sage: A sword, a shield and a magical cape.";
             page = 49;
         }
@@ -476,10 +491,12 @@ window.onload = function () {
             page = 50;
         }
         else if (page === 50){
+            toSay.style.color="#991916";
             toSay.innerHTML = "Elias: I'm going to make you pay Sage!";
             page = 51;
         }
         else if (page === 51){
+            toSay.style.color="#413647";
             toSay.innerHTML = "Crystal Sage: Oh, yea sure.";
             page = 52;
         }
@@ -504,6 +521,7 @@ window.onload = function () {
             page = 57;
         }
         else if (page === 57){
+            toSay.style.color="#991916";
             toSay.innerHTML = "Elias: ...";
             page = 58;
         }
@@ -512,6 +530,7 @@ window.onload = function () {
             page = 59;
         }
         else if (page === 59){
+            toSay.style.color="#413647";
             toSay.innerHTML = "Crystal Sage: Enough chit-chat knight!";
             page = 60;
         }
@@ -520,26 +539,32 @@ window.onload = function () {
             page = 61;
         }
         else if (page === 61){
+
             toSay.innerHTML = "... *crystals reforming*";
             page = 62;
         }
         else if (page === 62){
+            toSay.style.color="#991916";
             toSay.innerHTML = "Elias: This is bad... Are you up to this kid?";
             page = 63;
         }
         else if (page === 63){
+            toSay.style.color="#231F20";
             toSay.innerHTML = "....";
             page = 64;
         }
         else if (page === 64){
+            toSay.style.color="#991916";
             toSay.innerHTML = "Elias: You got nothing to do with the War kid. You don't have to do this.";
             page = 65;
         }
         else if (page === 65){
+            toSay.style.color="#231F20";
             toSay.innerHTML = "....";
             page = 66;
         }
         else if (page === 66){
+            toSay.style.color="#991916";
             toSay.innerHTML = "Elias: If you really insist.";
             page = 67;
         }
@@ -598,10 +623,12 @@ window.onload = function () {
             page = 76;
         }
         else if(page === 76){
+            toSay.style.color="#413647";
             toSay.innerHTML = "Crystal Sage: I have to say...";
             page = 77;
         }
         else if(page === 77){
+
             toSay.innerHTML = "Crystal Sage: I'm really impress how you can defeat my crystals so quickly.";
             page = 78;
         }
@@ -610,10 +637,12 @@ window.onload = function () {
             page = 79;
         }
         else if(page === 79){
+            toSay.style.color="#991916";
             toSay.innerHTML = "Elias: Yeah, because even fate wants you defeated you evil bastard!";
             page = 80;
         }
         else if(page === 80){
+            toSay.style.color="#413647";
             toSay.innerHTML = "Crystal Sage: Well. I have to agree. ";
             page = 81;
         }
@@ -626,6 +655,7 @@ window.onload = function () {
             page = 83;
         }
         else if(page === 83){
+            toSay.style.color="#991916";
             toSay.innerHTML = "Elias: Are you insane?";
             page = 84;
         }
@@ -638,6 +668,7 @@ window.onload = function () {
             page = 86;
         }
         else if(page === 86){
+            toSay.style.color="#413647";
             toSay.innerHTML = "Crystal Sage: I guess we have some misunderstandings here Elias.";
             page = 87;
         }
@@ -662,6 +693,7 @@ window.onload = function () {
             page = 92;
         }
         else if(page === 91){
+            toSay.style.color="#991916";
             toSay.innerHTML = "Elias: But you already have the Gem.";
             page = 92;
         }
@@ -670,6 +702,7 @@ window.onload = function () {
             page = 93;
         }
         else if(page === 93){
+            toSay.style.color="#413647";
             toSay.innerHTML = "Crystal Sage: That's what I thought too. Then I learned something about them.";
             page = 94;
         }
@@ -734,10 +767,12 @@ window.onload = function () {
             page = 108;
         }
         else if(page === 108){
+            toSay.style.color="#991916";
             toSay.innerHTML = "Elias: What? Use me?";
             page = 109;
         }
         else if(page === 109){
+            toSay.style.color="#413647";
             toSay.innerHTML = "Crystal Sage: Hahaha!";
             page = 110;
         }
@@ -750,10 +785,12 @@ window.onload = function () {
             page = 112;
         }
         else if(page === 112){
+            toSay.style.color="#991916";
             toSay.innerHTML = "Elias: Oh no. Oh no no no no!";
             page = 113;
         }
         else if(page === 113){
+            toSay.style.color="#413647";
             toSay.innerHTML = "Crystal Sage: You may be talented Elias, but you do not have the fortitude to resist my crystals!";
             page = 114;
         }
@@ -762,6 +799,7 @@ window.onload = function () {
             page = 115;
         }
         else if(page === 115){
+            toSay.style.color="#991916";
             toSay.innerHTML = "Elias: Kid, Run!";
             page = 116;
         }
@@ -770,14 +808,17 @@ window.onload = function () {
             page = 117;
         }
         else if(page === 117){
+            toSay.style.color="#231F20";
             toSay.innerHTML = "......";
             page = 118;
         }
         else if(page === 118){
+            toSay.style.color="#991916";
             toSay.innerHTML = "Elias: aahhhhhhhhhhhhhhh!";
             page = 119;
         }
         else if(page === 119){
+            toSay.style.color="#991916";
             toSay.innerHTML = "......";
             page = 120;
         }
@@ -798,6 +839,7 @@ window.onload = function () {
             page = 124;
         }
         else if(page === 124){
+            toSay.style.color="#413647";
             toSay.innerHTML = "Crystal Sage: I have to get going now. I still have a Kingdom to destroy.";
             page = 125;
         }
@@ -817,6 +859,7 @@ window.onload = function () {
 
         }
         else if(page === 128) {
+            toSay.style.color="#991916";
             toSay.innerHTML = "Crystal Elias: .. yess..";
             page = 129;
 
@@ -872,6 +915,7 @@ window.onload = function () {
 
         }
         else if(page === 135) {
+            toSay.style.color="#991916";
             toSay.innerHTML = "*Crystals falling apart*";
 
 
@@ -903,18 +947,22 @@ window.onload = function () {
 
         }
         else if(page === 140) {
+            toSay.style.color="#231F20";
+
             toSay.innerHTML = "...";
 
             page = 141;
 
         }
         else if(page === 140) {
+            toSay.style.color="#991916";
             toSay.innerHTML = "Crystal Elias: before I vanish.";
 
             page = 141;
 
         }
         else if(page === 141) {
+            toSay.style.color="#991916";
             toSay.innerHTML = "Crystal Elias: Before I go, I have a favor to ask...";
 
             page = 142;
@@ -1060,6 +1108,7 @@ window.onload = function () {
 
         }
         else if(page === 167) {
+            toSay.style.color="#231F20";
             toSay.innerHTML = ".........";
             page = 168;
 
@@ -1078,6 +1127,7 @@ window.onload = function () {
         else if (page === 1000){
             // pages 100-199 are pages for bad ending.
             enemy.style.display = "none";//remove enemyType from display
+            toSay.style.color="#991916";
             toSay.innerHTML = "I guess this is it...";
             page = 1010;
         }else if (page === 1010){
@@ -1086,6 +1136,7 @@ window.onload = function () {
             page = 1020;
         }else if (page === 1020){
             // pages 1000-1990 are pages for bad ending.
+            toSay.style.color="#231F20";
             toSay.innerHTML = "........";
             page = 1030;
         }else if (page === 1030){
@@ -1094,22 +1145,32 @@ window.onload = function () {
             page = 1040;
         }else if (page === 1040){
             // pages 100-199 are pages for bad ending.
+            toSay.style.color="#991916";
+
             toSay.innerHTML = "At least you fought bravely kid.";
             page = 1050;
         } else if (page === 1050){
             // pages 100-199 are pages for bad ending.
+            toSay.style.color="#413647";
+
             toSay.innerHTML = "*growl*";
             page = 1060;
         } else if (page === 1060){
             // pages 100-199 are pages for bad ending.
+            toSay.style.color="#413647";
+
             toSay.innerHTML = "*SLASH* .......";
             page = 1070;
         } else if (page === 1070){
             // pages 100-199 are pages for bad ending.
+            toSay.style.color="#231F20";
+
             toSay.innerHTML = ".................................... ";
             page = 1080;
         } else if (page === 1080){
             // pages 100-199 are pages for bad ending.
+            toSay.style.color="#413647";
+
             toSay.innerHTML = "*thunder*";
             page = 1090;
         } else if (page === 1090){
@@ -1135,6 +1196,7 @@ window.onload = function () {
         else if (page === 2000){
             // pages 100-199 are pages for bad ending.
             enemy.style.display = "none";//remove enemyType from display
+            toSay.style.color="#991916";
             toSay.innerHTML = "Elias: ...";
             page = 2010;
         }else if (page === 2010){
@@ -1147,14 +1209,20 @@ window.onload = function () {
             page = 2030;
         }else if (page === 2030){
             // pages 100-199 are pages for bad ending.
+            toSay.style.color="#231F20";
+
             toSay.innerHTML = "...";
             page = 2040;
         }else if (page === 2040){
             // pages 100-199 are pages for bad ending.
+            toSay.style.color="#991916";
+
             toSay.innerHTML = "Elias: At least you fought bravely kid.";
             page = 2050;
         } else if (page === 2050){
             // pages 100-199 are pages for bad ending.
+            toSay.style.color="#413647";
+
             toSay.innerHTML = "*thunder*";
             page = 2060;
         } else if (page === 2060){
@@ -1191,6 +1259,8 @@ window.onload = function () {
         // bad ending 3(for final boss) ------------------------------------------------------------------
         else if (page === 3000){
             // pages 100-199 are pages for bad ending.
+            toSay.style.color="#991916";
+
             toSay.innerHTML = "Crystal Elias: ...";
             page = 3001;
         }
