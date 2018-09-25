@@ -37,7 +37,7 @@
 
 }
 body{
-    background-color:#F67580;
+    background-color: indianred;
 }
 #score{
     display: none;
@@ -87,11 +87,11 @@ body{
     border-radius: 95px 9px 91px 7px;
     -moz-border-radius: 95px 9px 91px 7px;
     -webkit-border-radius: 95px 9px 91px 7px;
-    border: 15px outset #F67580;
+    border: 15px outset indianred;
 
 }
 #jumbotron{
-    background-color: #F67580;
+    background-color: indianred;
 }
 #copyright{
     margin-left: auto;
