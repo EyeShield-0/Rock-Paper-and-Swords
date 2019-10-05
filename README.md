@@ -1,6 +1,7 @@
 # Rock-Paper-and-Swords
 A timed Rock-Paper-Scissor game. It narrates a story as you progresses.
 # View
+![Alt text](/assets/images/Capture1.PNG?raw=true "Title")
 
 # Beat it 
 - https://naguitsirangel.github.io/Rock-Paper-and-Swords/
