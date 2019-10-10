@@ -18,7 +18,7 @@ JavaScript (/ˈdʒɑːvəˌskrɪpt/),[8] often abbreviated as JS, is a high-leve
 # Clone it
 - https://github.com/NaguitSirAngel/Rock-Paper-and-Swords
 
-# Auhor
+# Author
 - https://github.com/NaguitSirAngel
 - ign: EyeShield
 
